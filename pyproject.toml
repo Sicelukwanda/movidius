@@ -1,12 +1,16 @@
 [project]
 name = "movidius"
 version = "0.1.0"
-description = "A simple PyTorch refresher repository"
-requires-python = ">3.10, <3.11"
+description = "A simple repo for saving models onto the movidius compute stick"
+requires-python = ">=3.12, <3.13"
 
 
 dependencies = [
-    "openvino==2023.3.0",
+    "torch>=2.7.0",
+    "onnx",
+    "onnxscript",
+    "onnx-simplifier",
+    "openvino>=2024.0.0",
     "pytest",
     "chalk-diagrams",
     "ipython",
