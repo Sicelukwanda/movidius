@@ -23,6 +23,11 @@ try:
                 pass
 
         ie = IECore()
+        
+        # Use both variants of the reset config
+        ie.set_config({"MYRIAD_ENABLE_FORCE_RESET": "YES"}, "MYRIAD")
+        ie.set_config({"VPU_MYRIAD_FORCE_RESET": "YES"}, "MYRIAD")
+        
         blob_path = "model.blob"
 
         if not os.path.exists(blob_path):

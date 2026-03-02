@@ -9,8 +9,18 @@ env/
 venv/
 ENV/
 
-# Project specific
+# Model Artifacts
 model.onnx
 model.xml
 model.bin
 model.mapping
+model.blob
+model_sim.onnx
+model.pt
+model.onnx.data
+*.pt
+*.blob
+*.onnx
+
+# System
+97-myriad-usbboot.rules
